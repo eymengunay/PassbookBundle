@@ -1,0 +1,7 @@
+parameters:
+#    eo_passbook.example.class: Eo\PassbookBundle\Example
+
+services:
+#    eo_passbook.example:
+#        class: %eo_passbook.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
