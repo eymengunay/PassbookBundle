@@ -1,1 +1,15 @@
-Hello {{ name }}!
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EoPassbookBundle Sample</title>
+</head>
+<body>
+    <div align="center">
+        <h2>Pass created successfully!</h2>
+        <p><strong>Path:</strong> {{ pass.realPath }}</p>
+        <p><strong>Size:</strong> {{ pass.size/1024 }}KB</p>
+        <small>See <strong>{{ controller }}</strong> for more information</small>
+    </div>
+</body>
+</html>

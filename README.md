@@ -60,12 +60,22 @@ eo_passbook:
 ```
 All configuration values are required to use the bundle.
 
-### Next Steps
+### Step 4 (Optional): Import EoPassbookBundle routing files
+To browse the simple usage example you have to import the following file in your `routing.yml`:
+```
+# app/config/routing.yml
+eo_passbook_sample:
+    resource: "@EoPassbookBundle/Resources/config/routing/sample.xml"
+```
+You will now be able to access the example controller from: `http://domain.tld/passbook/sample`
+
+
+## Usage
 Now that you have completed the basic installation and configuration of the EoPassbookBundle, you are ready to learn more about the library and bundle usage.
 
 The following documents are available:
-* [PHP-Passbook documentation](http://eymengunay.github.io/php-passbook)
-* [PHP-Passbook api doc](http://eymengunay.github.io/php-passbook/api)
+* [PHP-Passbook Documentation](http://eymengunay.github.io/php-passbook)
+* [PHP-Passbook API DOC](http://eymengunay.github.io/php-passbook/api)
 
 ## License
 This bundle is under the MIT license. See the complete license in the bundle:
