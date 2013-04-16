@@ -13,7 +13,7 @@
     ],
     "require": {
         "symfony/symfony": ">=2.1,<2.3-dev",
-        "eo/passbook": "dev-master",
+        "eo/passbook": "dev-master"
     },
     "target-dir": "Eo/PassbookBundle",
     "autoload": {
