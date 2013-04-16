@@ -1,11 +1,11 @@
 # EoPassbookBundle
 
+[![Build Status](https://travis-ci.org/eymengunay/PassbookBundle.png)](https://travis-ci.org/eymengunay/PassbookBundle) [![knpbundles.com](http://knpbundles.com/eymengunay/PassbookBundle/badge-short)](http://knpbundles.com/eymengunay/PassbookBundle)
+
+
 EoPassbookBundle integrates the [php-passbook](http://eymengunay.github.io/php-passbook) library into Symfony2. 
 
 **Note**: See php-passbook documentation for more information on obtaining your p12 and wwdr certificates.
-
-[![knpbundles.com](http://knpbundles.com/eymengunay/PassbookBundle/badge-short)](http://knpbundles.com/eymengunay/PassbookBundle)
-
 
 ## Prerequisites
 This version of the bundle requires Symfony 2.1+
