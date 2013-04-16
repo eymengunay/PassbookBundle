@@ -14,6 +14,7 @@
     "require": {
         "eo/passbook": "dev-master"
     },
+    "target-dir": "Eo/PassbookBundle",
     "autoload": {
         "psr-0": {
             "Eo\\PassbookBundle": ""
