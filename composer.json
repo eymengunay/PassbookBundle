@@ -1,0 +1,27 @@
+{
+    "name":        "eo/passbook-bundle",
+    "type":        "symfony-bundle",
+    "description": "iOS Passbook for Symfony2",
+    "keywords":    ["passbook", "ios", "pass", "mobile", "wallet", "coupons", "tickets"],
+    "homepage":    "https://github.com/eymengunay/php-passbook",
+    "license":     "MIT",
+    "authors": [
+        {
+            "name": "Eymen Gunay",
+            "email": "eymen@egunay.com"
+        }
+    ],
+    "require": {
+        "eo/passbook": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Eo\\PassbookBundle": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
