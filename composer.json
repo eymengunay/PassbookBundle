@@ -3,7 +3,7 @@
     "type":        "symfony-bundle",
     "description": "iOS Passbook for Symfony2",
     "keywords":    ["passbook", "ios", "pass", "mobile", "wallet", "coupons", "tickets"],
-    "homepage":    "https://github.com/eymengunay/php-passbook",
+    "homepage":    "https://github.com/eymengunay/passbook-bundle",
     "license":     "MIT",
     "authors": [
         {
