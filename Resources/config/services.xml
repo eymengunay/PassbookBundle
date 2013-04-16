@@ -5,6 +5,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
+        <parameter key="eo_passbook.factory_class">Passbook\PassFactory</parameter>
         <parameter key="eo_passbook.pass_type_identifier" />
         <parameter key="eo_passbook.team_identifier" />
         <parameter key="eo_passbook.organization_name" />
@@ -15,7 +16,7 @@
     </parameters>
 
     <services>
-        <service id="eo_passbook.passbook_factory" class="Passbook\PassFactory">
+        <service id="eo_passbook.pass_factory" class="%eo_passbook.factory_class%">
             <argument>%eo_passbook.pass_type_identifier%</argument>
             <argument>%eo_passbook.team_identifier%</argument>
             <argument>%eo_passbook.organization_name%</argument>
@@ -26,5 +27,6 @@
                  <argument>%eo_passbook.output_path%</argument>
             </call>
         </service>
+        <service id="pass_factory" alias="eo_passbook.pass_factory" />
     </services>
 </container>
