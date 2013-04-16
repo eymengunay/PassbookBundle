@@ -22,7 +22,15 @@ class EoPassbookExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('services.yml');
+        $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('services.xml');
+
+        $container->setParameter('eo_passbook.pass_type_identifier', $config['pass_type_identifier']);
+        $container->setParameter('eo_passbook.team_identifier', $config['team_identifier']);
+        $container->setParameter('eo_passbook.organization_name', $config['organization_name']);
+        $container->setParameter('eo_passbook.p12_certificate', $config['p12_certificate']);
+        $container->setParameter('eo_passbook.p12_certificate_password', $config['p12_certificate_password']);
+        $container->setParameter('eo_passbook.wwdr_certificate', $config['wwdr_certificate']);
+        $container->setParameter('eo_passbook.output_path', $config['output_path']);
     }
 }

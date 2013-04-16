@@ -22,13 +22,14 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('pass_type_identifier')->end()
-                ->scalarNode('team_identifier')->end()
-                ->scalarNode('organization_name')->end()
-                ->scalarNode('p12_certificate')->end()
-                ->scalarNode('p12_certificate_password')->end()
-                ->scalarNode('wwdr_certificate')->end()
-                ->scalarNode('output_path')->end()
+                ->scalarNode('pass_type_identifier')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('team_identifier')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('organization_name')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('p12_certificate')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('p12_certificate_password')->isRequired()->end()
+                ->scalarNode('wwdr_certificate')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('output_path')->isRequired()->cannotBeEmpty()->end()
+            ->end()
         ;
 
         return $treeBuilder;
