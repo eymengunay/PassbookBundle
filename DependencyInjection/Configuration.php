@@ -20,9 +20,16 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('eo_passbook');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+            ->children()
+                ->scalarNode('pass_type_identifier')->end()
+                ->scalarNode('team_identifier')->end()
+                ->scalarNode('organization_name')->end()
+                ->scalarNode('p12_certificate')->end()
+                ->scalarNode('p12_certificate_password')->end()
+                ->scalarNode('wwdr_certificate')->end()
+                ->scalarNode('output_path')->end()
+        ;
 
         return $treeBuilder;
     }
