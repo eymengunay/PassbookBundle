@@ -1,3 +1,0 @@
-eo_passbook_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: EoPassbookBundle:Default:index }

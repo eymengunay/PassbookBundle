@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="eo_passbook.pass_type_identifier" />
+        <parameter key="eo_passbook.team_identifier" />
+        <parameter key="eo_passbook.organization_name" />
+        <parameter key="eo_passbook.p12_certificate" />
+        <parameter key="eo_passbook.p12_certificate_password" />
+        <parameter key="eo_passbook.wwdr_certificate" />
+        <parameter key="eo_passbook.output_path" />
+    </parameters>
+
+    <services>
+        <service id="eo_passbook.passbook_factory" class="Passbook\PassFactory">
+            <argument>%eo_passbook.pass_type_identifier%</argument>
+            <argument>%eo_passbook.team_identifier%</argument>
+            <argument>%eo_passbook.organization_name%</argument>
+            <argument>%eo_passbook.p12_certificate%</argument>
+            <argument>%eo_passbook.p12_certificate_password%</argument>
+            <argument>%eo_passbook.wwdr_certificate%</argument>
+            <call method="setOutputPath">
+                 <argument>%eo_passbook.output_path%</argument>
+            </call>
+        </service>
+    </services>
+</container>
