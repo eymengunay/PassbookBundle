@@ -71,7 +71,14 @@ You will now be able to access the example controller from: `http://domain.tld/p
 
 
 ## Usage
-Now that you have completed the basic installation and configuration of the EoPassbookBundle, you are ready to learn more about the library and bundle usage.
+
+This bundle currently adds only a single service, `pass_factory`
+```
+// Getting pass_factory service is straightforward:
+$factory = $this->get('pass_factory');
+```
+
+See php-passbook documentation for the rest.
 
 The following documents are available:
 * [PHP-Passbook Documentation](http://eymengunay.github.io/php-passbook)
