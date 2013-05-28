@@ -1,6 +1,10 @@
 # EoPassbookBundle
 
-[![Build Status](https://travis-ci.org/eymengunay/PassbookBundle.png)](https://travis-ci.org/eymengunay/PassbookBundle) [![knpbundles.com](http://knpbundles.com/eymengunay/PassbookBundle/badge-short)](http://knpbundles.com/eymengunay/PassbookBundle)
+[![Build Status](https://travis-ci.org/eymengunay/PassbookBundle.png)](https://travis-ci.org/eymengunay/PassbookBundle)
+
+[![Dependencies Status](https://d2xishtp1ojlk0.cloudfront.net/d/8539860)](http://depending.in/eymengunay/PassbookBundle)
+
+[![knpbundles.com](http://knpbundles.com/eymengunay/PassbookBundle/badge-short)](http://knpbundles.com/eymengunay/PassbookBundle)
 
 
 EoPassbookBundle integrates the [php-passbook](http://eymengunay.github.io/php-passbook) library into Symfony2. 
