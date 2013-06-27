@@ -1,0 +1,17 @@
+framework:
+    secret:          abcde
+    form:            true
+    csrf_protection: true
+    session:         ~
+    default_locale:  en  
+    translator:      { fallback: en }
+    profiler:        { only_exceptions: false }
+
+eo_passbook:
+    pass_type_identifier:       PASS-TYPE-IDENTIFIER
+    team_identifier:            TEAM-IDENTIFIER
+    organization_name:          ORGANIZATION-NAME
+    p12_certificate:            %kernel.root_dir%/Resources/certificates/dummy.p12
+    p12_certificate_password:   P12-CERTIFICATE-PASSWORD
+    wwdr_certificate:           %kernel.root_dir%/Resources/certificates/dummy.wwdr
+    output_path:                /tmp
