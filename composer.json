@@ -15,6 +15,9 @@
         "symfony/symfony": ">=2.1,<2.4-dev",
         "eo/passbook": "dev-master"
     },
+    "require-dev": {
+        "eo/symfony-test-edition": "dev-master"
+    },
     "target-dir": "Eo/PassbookBundle",
     "autoload": {
         "psr-0": {

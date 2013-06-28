@@ -11,3 +11,13 @@
 
 $loader = require_once __DIR__ . "/../vendor/autoload.php";
 $loader->add('Eo\\PassbookBundle\\', './');
+
+function registerContainerConfiguration($loader) {
+	$loader->load(__DIR__ . "/config.yml");
+}
+
+function registerBundles() {
+	return array(
+		new Eo\PassbookBundle\EoPassbookBundle(),
+	);
+}

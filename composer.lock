@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "78062ae34122b23cb08a3a455eb3e4c6",
+    "hash": "ca98050c53948808af1bc547626783db",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -749,14 +749,45 @@
         }
     ],
     "packages-dev": [
-
+        {
+            "name": "eo/symfony-test-edition",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eymengunay/symfony-test.git",
+                "reference": "8cf32d128786f3b193fb3c32e85d8fd9a5b8a4f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eymengunay/symfony-test/zipball/8cf32d128786f3b193fb3c32e85d8fd9a5b8a4f1",
+                "reference": "8cf32d128786f3b193fb3c32e85d8fd9a5b8a4f1",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/symfony": ">=2.1,<2.4-dev"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eymen Gunay",
+                    "email": "eymen@egunay.com"
+                }
+            ],
+            "description": "Stripped down edition of Symfony2 for executing bundle tests",
+            "time": "2013-06-28 11:10:26"
+        }
     ],
     "aliases": [
 
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "eo/passbook": 20
+        "eo/passbook": 20,
+        "eo/symfony-test-edition": 20
     },
     "platform": [
 
