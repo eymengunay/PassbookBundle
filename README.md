@@ -1,7 +1,6 @@
 # EoPassbookBundle
 
 [![Build Status](https://travis-ci.org/eymengunay/PassbookBundle.png)](https://travis-ci.org/eymengunay/PassbookBundle)
-[![Dependencies Status](https://d2xishtp1ojlk0.cloudfront.net/d/8539860)](http://depending.in/eymengunay/PassbookBundle)
 [![Latest Stable Version](https://poser.pugx.org/eo/passbook-bundle/v/stable.png)](https://packagist.org/packages/eo/passbook-bundle)
 [![Total Downloads](https://poser.pugx.org/eo/passbook-bundle/downloads.png)](https://packagist.org/packages/eo/passbook-bundle)
 
