@@ -3,13 +3,12 @@
 namespace Eo\PassbookBundle\Controller;
 
 use Passbook\Pass\Field;
-use Passbook\PassFactory;
 use Passbook\Pass\Barcode;
 use Passbook\Pass\Structure;
 use Passbook\Type\EventTicket;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class DefaultController extends Controller
+class DemoController extends Controller
 {
     public function indexAction()
     {
@@ -46,12 +45,6 @@ class DefaultController extends Controller
         $barcode = new Barcode('PKBarcodeFormatQR', 'barcodeMessage');
         $ticket->setBarcode($barcode);
 
-        // Create pass file
-        $pass = $factory->package($ticket);
-
-        return $this->render('EoPassbookBundle:Default:index.html.twig', array(
-            'pass'       => $pass,
-            'controller' => __FILE__
-        ));
+        return $this->render('EoPassbookBundle:Demo:index.html.twig', array('pass' => $factory->package($ticket)));
     }
 }
