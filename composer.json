@@ -13,7 +13,7 @@
     ],
     "require": {
         "symfony/symfony": ">=2.1,<2.5-dev",
-        "eo/passbook": "dev-master"
+        "eo/passbook": "~1.1"
     },
     "require-dev": {
         "eo/symfony-test-edition": "dev-master"
