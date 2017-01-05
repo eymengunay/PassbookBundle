@@ -1,9 +1,9 @@
 eo_passbook:
-    pass_type_identifier:       PASS-TYPE-IDENTIFIER
-    team_identifier:            TEAM-IDENTIFIER
-    organization_name:          ORGANIZATION-NAME
-    p12_certificate:            %kernel.root_dir%/../../../../vendor/eo/passbook/tests/cert/dummy.p12
-    p12_certificate_password:   P12-CERTIFICATE-PASSWORD
-    wwdr_certificate:           %kernel.root_dir%/../../../../vendor/eo/passbook/tests/cert/dummy.wwdr
-    output_path:                /tmp
-    icon_file:                  %kernel.root_dir%/../../../../vendor/eo/passbook/tests/img/icon.png
+    pass_type_identifier:       'PASS-TYPE-IDENTIFIER'
+    team_identifier:            'TEAM-IDENTIFIER'
+    organization_name:          'ORGANIZATION-NAME'
+    p12_certificate:            '%kernel.root_dir%/../../../../vendor/eo/passbook/tests/cert/dummy.p12'
+    p12_certificate_password:   'P12-CERTIFICATE-PASSWORD'
+    wwdr_certificate:           '%kernel.root_dir%/../../../../vendor/eo/passbook/tests/cert/dummy.wwdr'
+    output_path:                '/tmp'
+    icon_file:                  '%kernel.root_dir%/../../../../vendor/eo/passbook/tests/img/icon.png'
