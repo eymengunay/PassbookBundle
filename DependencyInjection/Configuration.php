@@ -29,6 +29,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('p12_certificate_password')->isRequired()->end()
                 ->scalarNode('wwdr_certificate')->isRequired()->cannotBeEmpty()->end()
                 ->scalarNode('output_path')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('icon_file')->isRequired()->cannotBeEmpty()->end()
             ->end()
         ;
 
