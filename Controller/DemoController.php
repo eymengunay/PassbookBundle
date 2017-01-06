@@ -4,6 +4,7 @@ namespace Eo\PassbookBundle\Controller;
 
 use Passbook\Pass\Field;
 use Passbook\Pass\Barcode;
+use Passbook\Pass\Image;
 use Passbook\Pass\Structure;
 use Passbook\Type\EventTicket;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -44,6 +45,9 @@ class DemoController extends Controller
         // Add barcode
         $barcode = new Barcode('PKBarcodeFormatQR', 'barcodeMessage');
         $ticket->setBarcode($barcode);
+
+        $icon = new Image($this->get('eo_passbook.icon_file'), 'icon');
+        $ticket->addImage($icon);
 
         return $this->render('EoPassbookBundle:Demo:index.html.twig', array('pass' => $factory->package($ticket)));
     }

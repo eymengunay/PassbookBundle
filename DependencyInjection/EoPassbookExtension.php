@@ -32,5 +32,6 @@ class EoPassbookExtension extends Extension
         $container->setParameter('eo_passbook.p12_certificate_password', $config['p12_certificate_password']);
         $container->setParameter('eo_passbook.wwdr_certificate', $config['wwdr_certificate']);
         $container->setParameter('eo_passbook.output_path', $config['output_path']);
+        $container->setParameter('eo_passbook.icon_file', $config['icon_file']);
     }
 }

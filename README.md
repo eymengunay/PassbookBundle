@@ -60,6 +60,7 @@ eo_passbook:
     p12_certificate_password:   P12-CERTIFICATE-PASSWORD
     wwdr_certificate:           /path/to/wwdr/certificate
     output_path:                /path/to/save/pkpass
+    icon_file:                  /path/to/iconfile
 ```
 All configuration values are required to use the bundle.
 

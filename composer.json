@@ -1,7 +1,7 @@
 {
     "name":        "eo/passbook-bundle",
     "type":        "symfony-bundle",
-    "description": "iOS Passbook for Symfony2",
+    "description": "iOS Passbook for Symfony",
     "keywords":    ["passbook", "ios", "pass", "mobile", "wallet", "coupons", "tickets"],
     "homepage":    "https://github.com/eymengunay/PassbookBundle",
     "license":     "MIT",
@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "symfony/symfony": ">=2.1,<2.9-dev",
-        "eo/passbook": "~1.1"
+        "symfony/symfony": ">=2.1",
+        "eo/passbook": "^2.0"
     },
     "require-dev": {
         "eo/symfony-test-edition": "dev-master"
