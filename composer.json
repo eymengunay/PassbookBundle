@@ -13,7 +13,8 @@
     ],
     "require": {
         "symfony/symfony": ">=2.1",
-        "eo/passbook": "^2.0"
+        "eo/passbook": "^2.0",
+        "symfony/phpunit-bridge": "^3.3"
     },
     "require-dev": {
         "eo/symfony-test-edition": "dev-master"
